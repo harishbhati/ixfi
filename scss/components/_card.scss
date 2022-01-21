@@ -16,7 +16,7 @@
     height: 55px;
     background: $white;
     border-radius: $circle-radius;
-    background-image: url(../../images/icon-sprite.png);
+    background-image: url(../images/icon-sprite.png);
   }
   .cripto-coin{
     background-position: -179px -63px;
@@ -50,7 +50,7 @@
         content: "";
         width: 31px;
         height: 117px;
-        background-image: url(../../images/card-pattern-left.png);
+        background-image: url(../images/card-pattern-left.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: absolute;
@@ -65,7 +65,7 @@
         content: "";
         width: 31px;
         height: 117px;
-        background-image: url(../../images/card-pattern-left.png);
+        background-image: url(../images/card-pattern-left.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: absolute;
@@ -80,7 +80,7 @@
         content: "";
         width: 31px;
         height: 117px;
-        background-image: url(../../images/card-pattern-right.png);
+        background-image: url(../images/card-pattern-right.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: absolute;
@@ -94,7 +94,7 @@
         content: "";
         width: 31px;
         height: 117px;
-        background-image: url(../../images/card-pattern-right.png);
+        background-image: url(../images/card-pattern-right.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: absolute;

@@ -546,7 +546,7 @@ main {
 .crypto__payment-option {
   width: 69px;
   height: 29px;
-  background-image: url(../../images/icon-sprite.png);
+  background-image: url(../images/icon-sprite.png);
 }
 .crypto__payment .icon__visa {
   background-position: -99px -59px;
@@ -590,7 +590,7 @@ main {
   content: "";
   width: 30px;
   height: 135px;
-  background-image: url(../../images/buy-crypto-pattren-vr.png);
+  background-image: url(../images/buy-crypto-pattren-vr.png);
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
@@ -601,7 +601,7 @@ main {
   content: "";
   width: 100%;
   height: 51px;
-  background-image: url(../../images/buy-crypto-pattren-hr.png);
+  background-image: url(../images/buy-crypto-pattren-hr.png);
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
@@ -707,7 +707,7 @@ main {
   height: 55px;
   background: #fff;
   border-radius: 50%;
-  background-image: url(../../images/icon-sprite.png);
+  background-image: url(../images/icon-sprite.png);
 }
 .cryptoPlan .cripto-coin {
   background-position: -179px -63px;
@@ -743,7 +743,7 @@ main {
   content: "";
   width: 31px;
   height: 117px;
-  background-image: url(../../images/card-pattern-left.png);
+  background-image: url(../images/card-pattern-left.png);
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
@@ -758,7 +758,7 @@ main {
   content: "";
   width: 31px;
   height: 117px;
-  background-image: url(../../images/card-pattern-left.png);
+  background-image: url(../images/card-pattern-left.png);
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
@@ -773,7 +773,7 @@ main {
   content: "";
   width: 31px;
   height: 117px;
-  background-image: url(../../images/card-pattern-right.png);
+  background-image: url(../images/card-pattern-right.png);
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
@@ -788,7 +788,7 @@ main {
   content: "";
   width: 31px;
   height: 117px;
-  background-image: url(../../images/card-pattern-right.png);
+  background-image: url(../images/card-pattern-right.png);
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
