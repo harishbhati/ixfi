@@ -1,0 +1,30 @@
+.crypto{
+  &__header{
+    &-discription{
+      margin-bottom: 25px;
+      font-size: 1.12rem;
+      color: $light-gray;
+    }
+  }
+  &__payment{
+    @include flex(flex, null, center, nowrap, 20px, null);
+    margin-bottom: 50px;
+    &-option{
+      width: 69px;
+      height: 29px;
+      background-image: url(../../images/icon-sprite.png);
+    }
+    .icon__visa{
+      background-position: -99px -59px;
+    }
+    .icon__master{
+      background-position: -10px -59px;
+    }
+    .icon__gpay{
+      background-position: -99px -10px;
+    }
+    .icon__paypal{
+      background-position: -10px -10px;
+    }
+  }
+}

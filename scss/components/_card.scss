@@ -1,0 +1,113 @@
+.cryptoPlan{
+  padding-top: 70px;
+  &__card-holder{
+    @include grid(grid, null, flex-start, repeat(2, 1fr), null, 40px);
+    @include device(sm-phone){
+      @include grid(null, null, null, 1fr);
+    }
+    h2{
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  }
+  .card__icon{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background: $white;
+    border-radius: $circle-radius;
+    background-image: url(../../images/icon-sprite.png);
+  }
+  .cripto-coin{
+    background-position: -179px -63px;
+  }
+  .moonplay{
+    background-position: -65px -101px;
+  }
+  .altalix{
+    background-position: -178px -7px;
+  }
+  .visa-card{
+    background-position: -16px -47px;
+  }
+  &__card{
+    padding: 30px 40px;
+    border-radius: $box-radius;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.2s ease-out;
+    &:hover{
+      box-shadow: 0px 4px 8px rgb(38 38 38 / 20%);
+      transform: scale(.9);
+    }
+    p{
+      color: $light-gray;
+    }
+    &.bg-purple-light{
+      background: #ecdeff;
+      position: relative;
+      &::before{
+        content: "";
+        width: 31px;
+        height: 117px;
+        background-image: url(../../images/card-pattern-left.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+    &.bg-purple{
+      background: #e6dfff;
+      position: relative;
+      &::before{
+        content: "";
+        width: 31px;
+        height: 117px;
+        background-image: url(../../images/card-pattern-left.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    &.bg-light{
+      background: #f9f5f8;
+      position: relative;
+      &::before{
+        content: "";
+        width: 31px;
+        height: 117px;
+        background-image: url(../../images/card-pattern-right.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    &.bg-light-white{
+      background: #f9eaf9;position: relative;
+      &::before{
+        content: "";
+        width: 31px;
+        height: 117px;
+        background-image: url(../../images/card-pattern-right.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    &-avtar{
+      @include flex(flex, space-between, center, nowrap, 20px, null);
+      margin-bottom: 20px;
+      .btn__white{
+        @include btn(btn-white-tiny);
+      } 
+    }
+  }
+}

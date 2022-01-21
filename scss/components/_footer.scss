@@ -1,0 +1,99 @@
+.footer{
+  background: $base;
+  &__nav{
+    li:not(:last-child){
+      margin-bottom: 25px;
+    }
+  }
+  &__top{
+    &__inner{
+      @include flex(flex, space-between, center, nowrap, 20px, null);
+      padding: 60px 0 40px;
+      border-bottom: 1px solid #3a3a3a;
+      @include device(sm-phone){
+        display: block;
+        img{
+          margin: 0 auto 30px;
+        }
+      }
+    }
+    &-list{
+      @include flex(flex, null, center, nowrap, 20px, null);
+      @include device(sm-phone){
+        @include flex(null, center);
+      }
+    }
+  }
+  &__middle{
+    padding: 60px 0;
+    color: $light-white;
+    font-size: 1.25rem;
+    &__inner{
+      @include grid(grid, null, flex-start, repeat(3,minmax(230px, 10%)) 1fr, null, 40px);
+      @include device(laptop){
+        @include grid(null, null, null, repeat(2,minmax(230px, 50%)), null, 70px);
+      }
+      @include device(phone){
+        @include grid(null, null, null, 1fr);
+      }
+    }
+    a{
+      color: $light-white;
+      font-size: 1.12rem;
+      position: relative;
+      &:hover{
+        color: rgb(251, 112, 114);
+        transform: translateX(10px);
+      }
+    }
+    &-contact{
+      margin-top: 20px;
+      @include flex(flex, null, center, wrap, 20px);
+      a{
+        font-size: 1.25rem;
+        @include flex(flex, null, center, null, 10px);
+        &:hover{
+          .footer__bottom-icons{
+            fill: $light-red;
+          }
+        }
+      }
+    }
+  }
+  &__bottom{
+    background: $bg-white;
+    padding: 25px 0;
+    font-size: 1.12rem;
+    &-inner{
+      @include flex(flex, space-between, center, nowrap, 20px, null);
+      @include device(phone){
+        display: block;
+        text-align: center;
+      }
+    }
+    &-social{
+      @include flex(flex, null, center, wrap, 20px, null);
+      @include device(phone){
+        margin-top: 30px;
+        @include flex(flex, center, null);
+      }
+      a{
+        background: $light-gray;
+        width: 50px;
+        height: 50px;
+        border-radius: $circle-radius;
+        position: relative;
+        @include flex(flex, center, center, null, null, null);
+        &:hover{
+          background: $light-red;
+          transform: translateY(-10px);
+        }
+      }
+    }
+    &-icons{
+      width: 30px;
+      height: 30px;
+      fill: $white;
+    }
+  }
+}

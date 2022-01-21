@@ -1,0 +1,28 @@
+body{
+  font:500 16px/1.2 $web-font-family;
+  color: $base;
+}
+h1 {
+  font-size: 3.12rem;
+  font-weight: 500;
+  color: $light-black;
+  margin-bottom: 35px;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: $heading-black;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 1.43rem;
+  font-weight: 500;
+  color: $white;
+  margin-bottom: 25px;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: $dark-black;
+  margin-bottom: 20px;
+}
