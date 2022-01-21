@@ -1,0 +1,74 @@
+@mixin flex ($flex: null, $justify:null, $align_item:null, $wrap:null,$gap:null, $direction:null) {
+  @if $flex !=null {
+    display: $flex;
+  }
+  @if $justify != null{
+    justify-content: $justify;
+  }
+  @if $align_item != null{
+    align-items: $align_item;
+  }
+  @if $wrap != null{
+    flex-wrap: $wrap;
+  }
+  @if $gap != null{
+      gap: $gap;
+  }
+  @if $direction != null{
+    flex-direction: $direction;
+  }
+}
+@mixin grid ($grid: null, $justify:null, $align_item:null, $column:null, $rows:null, $gap:null) {
+  @if $grid !=null {
+    display: $grid;
+  }
+  @if $justify != null{
+    justify-content: $justify;
+  }
+  @if $align_item != null{
+    align-items: $align_item;
+  }
+  @if $column != null{
+      grid-template-columns: $column;
+  }
+  @if $rows != null{
+      grid-template-rows: $rows;
+  }
+  @if $gap != null{
+      grid-gap: $gap;
+  }
+}
+
+$large-screen-width: 1580px;
+$laptop-screen-width: 1240px;
+$ipad-pro-width: 1024px;
+$phone-width: 767px;
+$small-phone-width: 640px;
+
+@mixin device($media) {
+  @if $media == large-desktop {
+    @media only screen and (max-width: #{$large-screen-width}) {
+      @content;
+    }
+  }
+  @if $media == laptop {
+    @media only screen and (max-width: #{$laptop-screen-width}) {
+      @content;
+    }
+  }
+  @if $media == ipad {
+    @media only screen and (max-width: #{$ipad-pro-width}) {
+      @content;
+    }
+  }
+  @if $media == phone {
+    @media only screen and (max-width: #{$phone-width}) {
+      @content;
+    }
+  }
+  @if $media == sm-phone {
+    @media only screen and (max-width: #{$small-phone-width}) {
+      @content;
+    }
+  }
+}

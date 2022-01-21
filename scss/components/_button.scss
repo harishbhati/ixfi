@@ -1,0 +1,99 @@
+%large-btn{
+  font: 500 1rem/1.43 $web-font-family;
+  padding: 15px 20px;
+  max-width: 100%;
+  width: auto;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:focus {
+      outline: none;
+  }
+}
+%small-btn{
+  font: 500 1.18rem/1.42 $web-font-family;
+  padding: 12px 20px;
+  max-width: 100%;
+  width: auto;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:focus {
+      outline: none;
+  }
+}
+%tiny-btn{
+  font: 500 .9rem/1.14 $web-font-family;
+  max-width: 100%;
+  width: auto;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:focus {
+      outline: none;
+  }
+}
+
+@mixin btn($bg-color) {
+  @if $bg-color == btn-blue-tiny{
+    background: $gradient-primary;
+    border: none;
+    color: $white;
+    border-radius: $oval-radius;
+    padding: 5px 20px;
+    @extend %tiny-btn;
+  }
+  @if $bg-color == btn-blue-small{
+    background: $gradient-primary;
+    border: none;
+    color: $white;
+    border-radius: $input-radius;
+    @extend %small-btn;
+  }
+  @if $bg-color == btn-blue-large{
+    text-align: center;
+    background: $gradient-primary;
+    border: none;
+    color: $white;
+    border-radius: $input-radius;
+    @extend %large-btn;
+  }
+  @if $bg-color == btn-outline-blue{
+    position: relative;
+    padding: 15px 30px;
+    @extend %tiny-btn;
+    &:before{
+      content: '';
+      color: $light-black;
+      border-radius: $oval-radius;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      border-radius:$oval-radius; 
+      padding:3px; 
+      background:$gradient-primary; 
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
+  @if $bg-color == btn-blue-large{
+    background: $gradient-primary;
+    border: none;
+    color: $white;
+    border-radius: $input-radius;
+    @extend %large-btn;
+  }
+  @if $bg-color == btn-white-tiny{
+    background: $white;
+    border: none;
+    color: $purple;
+    border-radius: $oval-radius;
+    padding: 10px 25px;
+    @extend %tiny-btn;
+  }
+}

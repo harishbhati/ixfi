@@ -1,0 +1,115 @@
+.process{
+  background: $white;
+  padding: 25px;
+  border-radius: $box-radius;
+  margin-bottom: 55px;
+  @include grid(grid, null, center, repeat(2, 1fr), null, 40px);
+  @include device(sm-phone){
+    @include grid(null, null, null, 1fr, null);
+  }
+  &__video{
+    position: relative;
+    background: $bg-purple;
+    border-radius: $box-radius;
+    color: $white;
+    padding: 25px;
+    font-size: 1.43rem;
+    min-height: 150px;
+    cursor: pointer;
+    &::before{
+      content: "";
+      width: 30px;
+      height: 135px;
+      background-image: url(../../images/buy-crypto-pattren-vr.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &::after{
+      content: "";
+      width: 100%;
+      height: 51px;
+      background-image: url(../../images/buy-crypto-pattren-hr.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .block{
+      display: block;
+    }
+    .svg-icon{
+      fill: $blue;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top:50%;
+      right: 30%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+  &__detail{
+    &-title{
+      color:$light-black ;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/*Veryfy Steps*/
+.verifyStep{
+  padding: 60px 0 40px;
+  border-bottom: 1px solid $light-gray;
+  &__timeline {
+    margin-bottom: 30px;
+    &-step{
+      padding-bottom: 20px;
+      @include flex(flex, null, center, null, 20px);
+    }
+    &-label{
+      font-size: 1.3rem;
+      width: 40px;
+      height: 40px;
+      border-radius: $circle-radius;
+      border: 1px solid $light-gray;
+      background: $white;
+      color: $light-black;
+      @include flex(flex, center, center);
+      position: relative;
+    }
+    &-detail{
+      color: $heading-black;
+      font-size: 1.1rem;
+    }
+    &-step:not(:last-child){
+      .verifyStep__timeline-label{
+        &::after{
+          content: '';
+          width: 2px;
+          height: 100%;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          background: $light-gray;
+        }
+      }
+    }
+    &-button{
+      text-align: right
+    }
+  }
+  .btn__blue{
+    display: inline-block;
+    @include btn(btn-blue-small);
+    position: relative;
+    transform: scale(1);
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}

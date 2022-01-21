@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy-Crypto</title>
+  <link href="dist/style.min.css" rel="stylesheet">
+  <link href="dist/swiper.css" rel="stylesheet">
+  <link rel="icon" href="images/fav.ico">
+</head>
+<body>
+  <!--Header-->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <img src="images/ixfi-logo.png" alt="Crypto Logo" class="header__logo-image" />
+        </a>
+        <button class="hamburger-menu-button" data-toggle="ham-navigation" id="hamburger-menu">
+          <span class="hamburger-menu-icon hamburger-menu-button-open">Menu</span>
+        </button>
+        <div class="header__navigation">
+          <nav class="header__nav">
+            <!--Header Main Navigation-->
+            <ul class="header__nav-main">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Buy Crypto</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Swap</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Market</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Trade</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Dashboard</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Wallet</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">History</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!--Header User Navigation-->
+          <ul class="header__nav-user">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-button">
+                <span class="avtar avtar__log">
+                  <svg class="svg-icon">
+                    <use xlink:href="./icons/icons.svg#icon-user" />
+                  </svg>
+                </span>
+                <span class="header__nav-text">Login</span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-button">
+                <span class="avtar avtar__reg">
+                  <svg class="svg-icon">
+                    <use xlink:href="./icons/icons.svg#icon-user" />
+                  </svg>
+                </span>
+                <span class="header__nav-text">Register</span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-button-outline">
+                <span class="header__nav-text">English</span>
+                <svg class="svg-icon">
+                  <use xlink:href="./icons/icons.svg#icon-caret-down" />
+                </svg>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-button-outline">
+                <span class="header__nav-text">USD</span>
+                <svg class="svg-icon">
+                  <use xlink:href="./icons/icons.svg#icon-caret-down" />
+                </svg>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-notification">
+                <svg class="svg-icon">
+                  <use xlink:href="./icons/icons.svg#icon-notification" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Tabbed Secondary Header-->
+  <section class="tabbed">
+    <div class="container">
+      <div class="tabbed__nav-holder">
+        <!--Tabbed section-->
+        <ul class="tabbed__list">
+          <li class="tabbed__list-item"><a class="active" href="#">Quick Buy/Sell</a></li>
+          <li class="tabbed__list-item"><a href="#">P2P Market</a></li>
+        </ul>
+
+        <ul class="tabbed__nav">
+          <li class="tabbed__nav-item"><a href="#">Help Center</a></li>
+          <li class="tabbed__nav-item">
+            <a href="javascript:void(0);" class="select__btn" data-type="firstOption">
+              <span class="tabbed__nav-text">Orders</span>
+              <svg class="svg-icon">
+                <use xlink:href="./icons/icons.svg#icon-caret-down" />
+              </svg>
+            </a>
+            <div class="select__dropdown">
+              <div class="select__option">Shoroom</div>
+              <div class="select__option">Top Gainer</div>
+              <div class="select__option">Top Loss</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--content section-->
+  <main>
+  <div class="container content__sideholder">
+    <section class="main__holder">
+      <!--Crypto Header Content-->
+      <section class="crypto__header">
+        <h1 class="crypto__header-title">Buy Crypto</h1>
+        <p class="crypto__header-discription">
+          Get easy access to 250 cryptos with 10 local currencies and 4 payment methods 
+        </p>
+        <ul class="crypto__payment">
+          <li class="crypto__payment-option icon__visa"></li>
+          <li class="crypto__payment-option icon__master"></li>
+          <li class="crypto__payment-option icon__gpay"></li>
+          <li class="crypto__payment-option icon__paypal"></li>
+        </ul>
+      </section>
+
+      <!--Buy Process Card-->
+      <section class="process">
+        <div class="process__video">
+          <p class="process__video-title">How to get <span class="block">My First IXFI?</span></p>
+          <svg class="svg-icon">
+            <use xlink:href="./icons/icons.svg#icon-play-btn" />
+          </svg>
+        </div>
+        <article class="process__detail">
+          <h3 class="process__detail-title">How to buy cryptos with a credit/debit card?</h3>
+          <p class="process__detail-dis">Check this video to see how to get your first crypto in just a few clicks!</p>
+        </article>
+      </section>
+
+      <!--Verify Steps Section-->
+      <section class="verifyStep">
+        <h2>Verify your account & Get started</h2>
+        <ul class="verifyStep__timeline">
+          <li class="verifyStep__timeline-step">
+            <span class="verifyStep__timeline-label">1</span>
+            <span class="verifyStep__timeline-detail">Fill in the address information</span>
+          </li>
+          <li class="verifyStep__timeline-step">
+            <span class="verifyStep__timeline-label">2</span>
+            <span class="verifyStep__timeline-detail">Upload ID document</span>
+          </li>
+          <li class="verifyStep__timeline-step">
+            <span class="verifyStep__timeline-label">3</span>
+            <span class="verifyStep__timeline-detail">Facial recognition via PC/Mobile</span>
+          </li>
+        </ul>
+        <div class="verifyStep__timeline-button">
+          <a href="#" class="btn btn__blue">Go to Verification</a>
+        </div>
+      </section>
+
+      <!--Plan Recommendation-->
+      <section class="cryptoPlan">
+        <div class="cryptoPlan__card-holder">
+          <div>
+            <h2>Based on your input, we recommend:</h2>
+            <figure class="cryptoPlan__card bg-purple-light">
+              <div class="cryptoPlan__card-avtar">
+                <span class="card__icon cripto-coin"></span>
+                <a href="#" class="btn__white">BUY</a>
+              </div>
+              <figcaption class="cryptoPlan__card-dis">
+                <h4>CryptoCoin PRO</h4>
+                <p>Card Fees: 2.90% (15 minutes delivery time) Bank Transfer Fees: 1.49% (1-2 business day)</p>
+              </figcaption>
+            </figure>
+          </div>
+          <figure class="cryptoPlan__card bg-light">
+            <div class="cryptoPlan__card-avtar">
+              <span class="card__icon moonplay"></span>
+              <a href="#" class="btn__white">BUY</a>
+            </div>
+            <figcaption class="cryptoPlan__card-dis">
+              <h4>MoonPay</h4>
+              <p>Card Fees: 5.90% (15 minutes delivery time) Bank Transfer Fees: 1.49% (1-2 business day)</p>
+            </figcaption>
+          </figure>
+
+          <figure class="cryptoPlan__card bg-purple">
+            <div class="cryptoPlan__card-avtar">
+              <span class="card__icon altalix"></span>
+              <a href="#" class="btn__white">BUY</a>
+            </div>
+            <figcaption class="cryptoPlan__card-dis">
+              <h4>Altalix</h4>
+              <p>Card Fees: 2.90% (15 minutes delivery time) Bank Transfer Fees: 1.49% (1-2 business day)</p>
+            </figcaption>
+          </figure>
+
+          <figure class="cryptoPlan__card bg-light-white">
+            <div class="cryptoPlan__card-avtar">
+              <span class="card__icon visa-card"></span>
+              <a href="#" class="btn__white">BUY</a>
+            </div>
+            <figcaption class="cryptoPlan__card-dis">
+              <h4>VISA</h4>
+              <p>Card Fees: 2.90% (15 minutes delivery time) Bank Transfer Fees: 1.49% (1-2 business day)</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <!--Form Right Sidebar-->
+    <aside class="sidebar__form">
+      <!--Tabbed navigation-->
+      <div class="tab__form">
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="form-tab">Buy</li>
+          <li class="tab-link" data-tab="content-tab">Sell</li>
+        </ul>
+        <div class="tab__form-location">
+          <span class="location__text">Location</span>
+          <span class="location__icon"></span>
+        </div>
+      </div>
+      <div class="tabs-wrapper">
+        <div id="form-tab" class="tab-content current">
+          <form action="" class="crypro__form">
+             <div class="crypro__form__holder">
+               <div class="crypro__form-group">
+                  <label class="crypro__form-label">Select Currency</label>
+                  <div class="crypto__currency-left">
+                    <span class="crypto__currency-icon"></span>
+                    <span class="crypto__currency-text">10</span>
+                  </div>
+               </div>
+
+               <div class="crypro__form-group">
+                <label class="crypro__form-label text-purple">Available 0.00 EUR</label>
+                <div class="crypto__currency">
+                  <span class="crypto__currency-text">EUR</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="./icons/icons.svg#icon-caret-down" />
+                  </svg>
+                </div>
+                </div>
+              </div>
+
+              <p class="alert__message">Insufficient balance, <span>Deposit now</span></p>
+
+              <div class="crypro__form__holder">
+                <div class="crypro__form-group">
+                   <label class="crypro__form-label">Select Coin</label>
+                   <div class="crypto__coin">
+                     <span class="crypto__coin-icon"></span>
+                     <span class="crypto__coin-text">0.000357</span>
+                   </div>
+                </div>
+ 
+                <div class="crypro__form-group">
+                 <div class="crypto__currency">
+                   <span class="crypto__currency-text">BTC</span>
+                   <svg class="svg-icon">
+                     <use xlink:href="./icons/icons.svg#icon-caret-down" />
+                   </svg>
+                 </div>
+               </div>
+             </div>
+             <!--Slider-->
+             <ul class="swiper">
+              <div class="swiper-wrapper">
+                <li class="Sswiper-slide">
+                  <img src="images/card-payment.png" alt="Card Payement">
+                </li>
+                
+                <li class="swiper-slide">
+                  <img src="images/bank-transfer.png" alt="Bank Transfer">
+                </li>
+                
+                <li class="swiper-slide">
+                  <img src="images/card-payment.png" alt="Card Payement">
+                </li>
+              </div>
+              <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </ul>
+
+             <div class="crypro__form-button">
+              <a href="#" class="btn btn__blue">Buy BTC</a>
+            </div>
+          </form>
+        </div> 
+
+        <div id="content-tab" class="tab-content">
+          The Sell form is under construction
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+  <!--Footer-->
+  <footer class="footer">
+    <!--Footer Top-->
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__top__inner">
+          <img src="images/ixfi-logo.png" alt="Crypto Logo" class="footer__logo" />
+          <ul class="footer__top-list">
+            <li><a href="#"><img src="images/app-store.png" alt="App Store" /></a></li>
+            <li><a href="#"><img src="images/google-play.png" alt="Google Play" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Middle-->
+    <div class="footer__middle">
+      <div class="container">
+        <div class="footer__middle__inner">
+          <!--Footer Quick Links-->
+          <div class="footer__nav">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Referral Program</a></li>
+              <li><a href="#">IXFI Blog</a></li>
+              <li><a href="#">IXFI Manifesto</a></li>
+            </ul>
+          </div>
+
+          <!--Footer Support Links-->
+          <div class="footer__nav">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Fee Structure</a></li>
+            </ul>
+          </div>
+
+          <!--Footer Contact Us-->
+          <div class="footer__nav">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><a href="#">Legal & Technical</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term & Conditions</a></li>
+              <li><a href="#">Cookies Policy</a></li>
+            </ul>
+          </div>
+
+          <!--Footer Address-->
+          <div class="footer__addres">
+            <h3>Address</h3>
+            <p>Holding and headquarters in Switzerland Avenue Beauregard 31700 Fribourg</p>
+            <ul class="footer__middle-contact">
+              <li>
+                <a href="#"> 
+                  <svg class="footer__bottom-icons">
+                    <use xlink:href="./icons/icons.svg#icon-email" />
+                  </svg>
+                <span>support@ixfi.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="footer__bottom-icons">
+                    <use xlink:href="./icons/icons.svg#icon-phone" />
+                  </svg>
+                  <span>+010 1710101010</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Bottom-->
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p>&copy; 2021 IXFI. All Rights Reserved</p>
+          <ul class="footer__bottom-social">
+            <li class="footer__bottom-item">
+              <a href="#">
+                <svg class="footer__bottom-icons">
+                  <use xlink:href="./icons/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="#">
+                <svg class="footer__bottom-icons">
+                  <use xlink:href="./icons/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="#">
+                <svg class="footer__bottom-icons">
+                  <use xlink:href="./icons/icons.svg#icon-linkdin" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="#">
+                <svg class="footer__bottom-icons">
+                  <use xlink:href="./icons/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="#">
+                <svg class="footer__bottom-icons">
+                  <use xlink:href="./icons/icons.svg#icon-midum" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="#">
+                <svg class="footer__bottom-icons">
+                  <use xlink:href="./icons/icons.svg#icon-telegram" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a href="#">
+                <svg class="footer__bottom-icons">
+                  <use xlink:href="./icons/icons.svg#icon-youtube" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Modal-->
+  <section class="modal">
+    <div class="modal__container">
+      <span class="modal__close">
+        <svg class="close-icons">
+          <use xlink:href="./icons/icons.svg#icon-close" />
+        </svg>
+      </span>
+      <div class="modal__content">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/owsfdh4gxyc" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <script src="js/swiper.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/header.js"></script>
+   <script src="js/slider.js"></script>
+</body>
+</html>

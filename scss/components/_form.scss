@@ -1,0 +1,116 @@
+.sidebar__form{
+  background: $white;
+  padding: 60px;
+  border-radius: $box-radius;
+  position: sticky;
+  top:267px;
+  overflow: hidden;
+  @include  device(large-desktop){
+    top:277px;
+  }
+  
+  .btn__blue{
+    @include btn(btn-blue-large);
+  }
+}
+.tab__form{
+  margin-bottom: 30px;
+  @include flex(flex, space-between, center, nowrap, 20px);
+  .tabs{
+    @include flex(flex, null, center, nowrap, 30px);
+    .tab-link{
+      color: $light-black;
+      position: relative;
+      font-size: 1.25rem;
+      padding-bottom: 15px;
+      cursor: pointer;
+      &::after{
+        content: '';
+        background: transparent;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      &.current{
+        color: $purple;
+        &::after{
+          background: $purple;
+        }
+      }
+    }
+  }
+  &-location{
+    @include flex(flex, null, center, nowrap, 10px);
+    font-size: 1.12rem;
+  }
+  .location__icon{
+    width: 39px;
+    height: 39px;
+    background: url(../../images/icon-sprite.png) -10px -108px;
+  }
+}
+
+.crypro__form{
+  &__holder{
+    padding: 12px;
+    margin-bottom: 20px;
+    @include grid(grid, null, center, repeat(2,1fr), null, 10px);
+    border: 1px solid #dfe2e7;
+    border-radius: $input-radius;
+  }
+  &-group{
+    .text-purple{
+      color: $purple;
+    }
+    &:last-child{
+      text-align: right;
+    }
+  }
+  &-label{
+    display: inline-block;
+    color: $light-gray;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  .svg-icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+.crypto__currency{
+  @include flex(flex, flex-end, center, null, 8px);
+  &-left{
+    @include flex(flex, null, center, null, 8px);
+  }
+  &-text{
+    cursor: pointer;
+  }
+  &-icon{
+    width: 39px;
+    height: 39px;
+    background: url(../../images/icon-sprite.png) -10px -108px;
+  }
+}
+.crypto__coin{
+  &-text{
+    font-size: 1.4rem;
+  }
+}
+.alert__message{
+  color: $red;
+  font-size: .9rem;
+  text-align: right;
+    margin-bottom: 10px;
+  span{
+    color: $light-black;
+  }
+}
+.tab-content{
+  display: none;
+  &.current{
+    display: block;
+  }
+}

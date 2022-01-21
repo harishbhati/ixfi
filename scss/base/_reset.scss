@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; 
+}  
+button{
+  appearance: none;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+span{
+  display: inline-block;
+}  
+ul,ol{
+  list-style: none;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color:$light-black;
+  transition: all .5s ease;
+}

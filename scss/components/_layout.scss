@@ -1,0 +1,13 @@
+main{
+  background: $bg-white;
+  padding: 90px 0;
+  @include  device(large-desktop){
+    padding: 60px 0;
+  }
+}
+.content__sideholder{
+  @include grid(grid, null, flex-start, 1fr 40%, null, 40px);
+  @include device(ipad){
+    @include grid(null, null, null, 1fr, null, 80px);
+  }
+}

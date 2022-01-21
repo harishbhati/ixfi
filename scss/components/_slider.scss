@@ -1,0 +1,16 @@
+.crypro__form{
+  .swiper{
+    margin-bottom: 20px;
+    padding: 0 25px;
+    &-wrapper{
+      align-items: center;
+    }
+    &-button{
+      &-prev,&-next{
+        &:after{
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.tabbed{
+  position: sticky;
+  top: 93px;
+  left: 0;
+  z-index: 1;
+  background: $white;
+  @include  device(large-desktop){
+    top: 131px;
+  }
+  @include  device(ipad){
+    top: 94px;
+  }
+  &__nav-holder {
+    padding-top:40px;
+    @include flex(flex, space-between, center, nowrap, 20px, null);
+    @include device(sm-phone){
+      display: grid;
+      justify-content: center;
+    }
+  }
+  &__list,&__nav{
+    @include flex(flex, null, center, nowrap, 35px, null);
+    &-item{
+      a{
+        font-size: 1.25rem;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  &__list{
+    &-item{
+      a{
+        color: $light-black;
+        position: relative;
+        &::after{
+          content: '';
+          background: transparent;
+          height: 3px;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        &.active{
+          color: $purple;
+          &::after{
+            background: $purple;
+          }
+        }
+      }
+    }
+  }
+  &__nav{
+    @include device(sm-phone){
+      order: -1;
+    }
+    &-item{
+      position: relative;
+      a{
+        @include flex(flex, center, center, nowrap, 10px, null);
+        color: $light-gray;
+      }
+    }
+  }
+  .svg-icon{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/*dropdown*/
+.select{
+  &__dropdown{
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(1, 0);
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    min-width: 150px;
+  }
+  &__option{
+    cursor: pointer;
+    padding: 12px;
+    border-bottom: 1px solid $light-white;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
+.dropdown__open{
+  &.select{
+    &__dropdown{
+      visibility: visible;
+      transform: scale(1, 1);
+    }
+  }
+}
